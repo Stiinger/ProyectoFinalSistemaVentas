@@ -3,6 +3,7 @@
 @inject NavigationManager navigation
 @inject ProductosService productosService
 
+@attribute [Authorize(Roles = "Admin")]
 <PageTitle>Inventario</PageTitle>
 <div class="container">
     <div class="card shadow-lg">

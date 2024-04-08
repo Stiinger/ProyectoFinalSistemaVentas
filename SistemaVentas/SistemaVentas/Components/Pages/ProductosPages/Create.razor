@@ -5,6 +5,7 @@
 @inject CategoriasService categoriasService
 @inject NotificationService notificationService
 
+@attribute [Authorize(Roles = "Admin")]
 <PageTitle>Crear Nuevo Producto</PageTitle>
 <RadzenNotification  />
 <EditForm Model="producto" OnValidSubmit="Crear" FormName="RegistroProductos">

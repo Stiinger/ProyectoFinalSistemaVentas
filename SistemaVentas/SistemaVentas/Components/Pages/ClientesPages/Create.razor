@@ -3,6 +3,7 @@
 @inject NavigationManager navigation
 @inject ClientesService clientesService
 
+@attribute [Authorize(Roles = "Admin")]
 <PageTitle>Crear Nuevo Cliente</PageTitle>
 <RadzenNotification/>
 <EditForm Model="cliente" OnValidSubmit="Crear" FormName="RegistroClientes">

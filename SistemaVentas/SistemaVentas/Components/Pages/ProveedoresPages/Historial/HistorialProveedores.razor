@@ -7,6 +7,7 @@
 @inject ComprasService comprasService
 @inject NotificationService notificationService
 
+@attribute [Authorize(Roles = "Admin")]
 <PageTitle>Historial de Proveedores</PageTitle>
 <RadzenNotification />
 <div class="container">

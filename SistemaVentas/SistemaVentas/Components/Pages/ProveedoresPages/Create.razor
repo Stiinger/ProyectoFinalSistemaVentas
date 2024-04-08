@@ -7,6 +7,7 @@
 @inject NotificationService notificationService
 @inject NotificationService notificationService
 
+@attribute [Authorize(Roles = "Admin")]
 <PageTitle>Crear Nuevo Proveedor</PageTitle>
 <RadzenNotification />
 <EditForm Model="proveedor" OnValidSubmit="Crear" OnInvalidSubmit="ErrorAlGuardar" FormName="RegistroProveedores">

@@ -5,6 +5,7 @@
 @inject ClientesService clientesService
 @inject NotificationService notificationService
 
+@attribute [Authorize(Roles = "Admin")]
 <PageTitle>Ver Cliente</PageTitle>
 <RadzenNotification/>
 <div class="container">

@@ -11,6 +11,7 @@
 @inject ProductosService productosService
 @inject NotificationService notificationService
 
+@attribute [Authorize(Roles = "Admin,Client")]
 <PageTitle>Modificar Devoluci&oacute;n</PageTitle>
 <RadzenNotification />
 <EditForm Model="devolucion" OnValidSubmit="Crear" FormName="ModificarDevoluciones">

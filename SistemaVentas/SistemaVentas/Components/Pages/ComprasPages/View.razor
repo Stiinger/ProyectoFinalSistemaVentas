@@ -12,6 +12,7 @@
 @inject MetodosPagoService metodosPagoService
 @inject NotificationService notificationService
 
+@attribute [Authorize(Roles = "Admin")]
 <PageTitle>Detalles de Compra</PageTitle>
 <RadzenNotification />
 <div class="container">

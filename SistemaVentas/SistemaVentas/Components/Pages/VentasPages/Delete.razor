@@ -9,6 +9,7 @@
 @inject MetodosPagoService metodosPagoService
 @inject NotificationService notificationService
 
+@attribute [Authorize(Roles = "Admin")]
 <PageTitle>Eliminar Venta</PageTitle>
 <div class="container">
 	<div class="card shadow-lg">

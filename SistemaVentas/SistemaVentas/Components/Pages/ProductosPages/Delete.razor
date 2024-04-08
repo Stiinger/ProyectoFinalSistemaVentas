@@ -5,6 +5,7 @@
 @inject ProductosService productosService
 @inject NotificationService notificationService
 
+@attribute [Authorize(Roles = "Admin")]
 <PageTitle>Eliminar Producto</PageTitle>
 <RadzenNotification  />
 <div class="container">

@@ -5,6 +5,7 @@
 @inject ClientesService clientesService
 @inject NotificationService notificationService
 
+@attribute [Authorize(Roles = "Admin")]
 <PageTitle>Editar Cliente</PageTitle>
 <RadzenNotification/>
 <EditForm Model="cliente" OnValidSubmit="Modificar" FormName="EditarCliente">

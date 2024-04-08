@@ -7,6 +7,7 @@
 @inject CuentasPorCobrarService cuentasPorCobrarService
 @inject NotificationService notificationService
 
+@attribute [Authorize(Roles = "Admin")]
 <PageTitle>Abonar Cuenta por Cobrar</PageTitle>
 <RadzenNotification/>
 <div class="container">

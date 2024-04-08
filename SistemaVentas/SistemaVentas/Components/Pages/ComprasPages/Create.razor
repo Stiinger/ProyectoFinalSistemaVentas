@@ -11,6 +11,7 @@
 @inject TiposContribuyenteService tiposContribuyenteService
 @inject NotificationService notificationService
 
+@attribute [Authorize(Roles = "Admin")]
 <PageTitle>Crear Nueva Compra</PageTitle>
 <RadzenNotification />
 <EditForm Model="compra" OnValidSubmit="Crear" FormName="RegistroCompras">

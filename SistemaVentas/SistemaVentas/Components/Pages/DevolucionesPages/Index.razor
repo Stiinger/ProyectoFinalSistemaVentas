@@ -8,6 +8,7 @@
 @inject DevolucionesService devolucionesService
 @inject NotificationService notificationService
 
+@attribute [Authorize(Roles = "Admin,Client")]
 <PageTitle>Devoluciones</PageTitle>
 <RadzenNotification />
 <div class="container">
